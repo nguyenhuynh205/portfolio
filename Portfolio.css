@@ -1,0 +1,721 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    position: fixed; z-index: 10;
+    width: 100%;
+    background-color: black;
+    color: white;
+    top: 0;
+}
+
+.header-logo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+
+}
+
+.menu-nav {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: space-around;
+    margin-left: 30px;
+    transition: .5s ease-in-out;
+}
+
+.menu a:hover {
+    color: rgb(207, 207, 114);
+    transition: .5s ease-in-out;
+}
+
+/* intro */
+
+.intro {
+    position: relative;
+    padding-top: 62.225px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+    background-image: url(IMG_9521.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.intro h1 {
+    font-size:55px;
+}
+
+.intro-bg {
+    position: absolute;
+    background-color: rgb(207, 207, 114);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.intro-content{
+    width: 100%;
+    color: white;
+    z-index: 1;
+}
+
+/* about */
+#about {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    padding-bottom: 25px;
+    padding-top: 60px;
+    height: 600px;
+}
+
+.about-left {
+width: 50%;
+
+}
+
+.about-personal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-personal-img {
+    margin-top: 16px;
+
+}
+
+.about-title h1 {
+    margin-left: 20px;
+}
+
+.about-content p {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.profile-picture {
+    height: 250px;
+}
+
+.about-skill {
+    margin-left: 10%;
+}
+
+.skill-1 {
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar {
+    display: flex;
+    background-color: black;
+    height: 15px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.skill-bar-1-completed {
+    background-color: rgb(207, 207, 114);
+    width: 20%;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.skill-bar-2-completed {
+    background-color: rgb(207, 207, 114);
+    width: 10%;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.skill-bar-3-completed {
+    background-color: rgb(207, 207, 114);
+    width: 1%;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.skill-bar-4-completed {
+    background-color: rgb(207, 207, 114);
+    width: 100%;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.about-right {
+    width: 50%;
+}
+
+
+
+/* Achievements */
+#achievements {
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    height: 450px;
+    margin-top: 110px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#achievements h1 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.achievements-logo {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;    
+}
+
+.sizeLogo {
+    font-size: 45px;
+    margin: 20px;
+}
+
+.colorLogo {
+    color: brown;
+    text-shadow: 0 0 1px #000;
+}
+
+.logo {
+    width: 30%;
+    text-align: center;
+    margin-right: 15px;
+    background-color: antiquewhite;
+    border-radius: 5%;
+}
+
+
+
+.logo-items {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border: 4px solid red;
+    border-radius: 80%;
+    text-align: center;
+    margin-top: 10px;
+    transition: 1.5s ease-in-out;
+}
+
+.logo-items i {
+    transition: 1.5s ease-in-out;
+}
+
+.logo-items:hover {
+    border: 4px solid white;
+    background-color: #086ed4;
+    transition: 1.5s;
+}
+
+.logo-items:hover i {
+    color: white;
+    transition: 1.5s;
+}
+
+
+.achievements-logo h4 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.achievements-logo h2 {
+    margin-bottom: 0;
+}
+
+/* Hobbies */
+#hobbies h1{
+    color: black;
+    text-align: center;
+}
+
+#hobbies {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    height: fit-content;
+    margin-top: 110px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#hobbies h1 {
+    margin-top: 25px;
+}
+
+.hobby-page {
+    width: 25%;
+    text-decoration: none;
+    color: black !important;
+    transform: scale(1);
+    transition: 700ms ease-in-out;
+}
+
+.hobby-page:hover {
+    transform: scale(1.05);
+    transition: 500ms ease-in-out;
+}
+
+.hobby-cardio {
+}
+
+.hobbies-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobbies0 {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border: 3px dashed grey;
+    border-radius: 5%;
+}
+
+.hobbies0 img {
+    border-radius: 5%;
+    width: 100%;
+    height: 231.55px;
+}
+
+.hobbies-body {
+    position: relative;
+}
+
+.hobbies-title {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: -35px;
+}
+
+.hobbies-title h6 {
+    display: inline-block;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 15%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hobbies0 p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hobbies0 h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Blog */
+#blog {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    height: max-content;
+    margin-top: 110px;
+    padding-top: 60px;
+}
+
+#blog h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.blog-content {
+    display: flex;
+    height: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: auto;
+    border-bottom: orange solid 1px;
+}
+
+.blog-img {
+    background-image: url(https://www.artificialintelligence-news.com/wp-content/uploads/sites/9/2024/03/elon-musk-xai-grok-open-source-large-language-model-ai-artificial-intelligence.jpg);
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.blog-text {
+    width: 60%;
+    margin: 0;
+    padding-top: 30px;
+
+}
+
+.fa-regular {
+    margin: 0 10px;
+    font-size: 15px;
+    color: grey;
+}
+
+.blog-text h7 {
+    opacity: 0.7;
+    color: grey;
+}
+
+.blog-source {
+    color: orange;  
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.blog-source:hover {
+    color: blue;
+    transition: 0.5s;
+}
+
+.blog-img2 {
+    background-image: url(https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/414994165_333518929526727_2321917303942718648_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEcRGJOxC3RoUp0HRndmkSIlQqE0iR-i1aVCoTSJH6LVgL0GLKta-KGl4mZVPJGead2yUcIga1GRO1BdimTYoMZ&_nc_ohc=kD7Ah3fxmKYAX_VJjd2&_nc_zt=23&_nc_ht=scontent.fsgn5-11.fna&oh=00_AfCwEuRzccgdrevsqBvpY_R15OOEfStf2L3CmsfE5RpTcQ&oe=660112FB);
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-left: 5%;
+    margin-top: 30px;
+  }
+
+.blog-img3{
+    background-image: url(IMG_5694.JPG);
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+/* contact */
+
+#contact {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    height: fit-content;
+    margin-top: 110px;
+    padding-top: 60px;
+    display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+}
+
+.contact-left {
+    width: 50%;
+
+}
+
+
+.contact-left h2 {
+    padding-left: 10%;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    font-size: 35px;
+}
+
+.cb {
+    margin-bottom: 4%;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.cb ::placeholder {
+    padding: 10px;
+}
+
+.cbm ::placeholder {
+    padding: 10px;
+}
+
+
+.cb input {
+    width: 80%;
+    height: 2rem;
+    border-radius: 10px;
+    border: grey solid 1px;
+}
+
+.cbm {
+    padding-left: 10%;
+    margin-bottom: 4%;
+    width: 100%;
+}
+
+.cbm textarea {
+    width: 80%;
+    height: 2rem;
+    border-radius: 10px;
+    border: grey solid 1px;
+    height: 50px;
+}
+
+.contact-right {
+    width: 50%;
+    padding-right: 5%;
+}
+
+.contact-right h2 {
+    padding-top: 5%;
+    margin-bottom: 5%;
+    font-size: 35px;
+}
+
+.personalinfo {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.personalinfo p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.info-icon {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.fa-brands {
+    font-size: 40px;
+    padding: 10px;
+    color: #086ed4;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    width: 55px;
+    height: 55px;
+    border: white solid 1px;
+    border-radius: 30px;
+    transition: 1s ease-in-out;
+}
+
+.circle i {
+    transition: 1s ease-in-out;
+}
+
+.circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    width: 55px;
+    height: 55px;
+    border: white solid 1px;
+    border-radius: 30px;
+    transition: 1s ease-in-out;
+}
+
+.circle2 i {
+    transition: 1s ease-in-out;
+}
+
+.circle:hover {
+    transition: 1s;
+    border: white 1px solid;
+    background-color: #086ed4;
+}
+
+.circle i:hover {
+    transition: 1s;
+    color: white;
+}
+
+.circle2:hover {
+    transition: 1s;
+    border: white 1px solid;
+    background-color: red;
+}
+
+.circle2 i:hover {
+    transition: 1s;
+    color: white;
+}
+
+.personalinfoz {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    #about {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .about-left {
+        width: 100%;
+    }
+    .about-right {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 1258px) {
+    .hobbies-content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+    main {
+
+}  
+    .about-skill {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #contact {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .hobby-page {
+        width: 75%;
+    }
+    .about-personal {
+        width: 100%;
+    }
+    .about-personal-info {
+        padding-left: 5%;
+        width: 44%;
+        word-wrap: break-word;
+    }
+    .about-content {
+        
+    margin: 0;
+    width: 95%;
+    word-wrap: break-word;
+
+    }
+    .achievements-logo {
+        
+    flex-direction: column;
+    align-items: center;
+
+    }
+    .logo {
+        width: 80%;
+        margin-right: 0;
+        margin-top: 5%;
+    }
+    .about-right {
+        margin-top: 10%;
+    }
+
+    .contact-left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 952px) {
+    #achievements {
+        width: 100%;
+        height: auto;
+    }
+    #about {
+        width: 100%;
+        height: auto;
+    }
+    #hobbies {
+        width: 100%;
+        height: auto;
+    }
+    #blog {
+        width: 100%;
+        height: auto;
+    }
+    #contact {
+        width: 100%;
+        height: auto;
+    }
+    .blog-content {
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .blog-img {
+        height: 300px;
+        width: 300px;
+        margin: 0;
+    }
+    .blog-text {
+        margin: 0;
+        padding-top: 0;
+    }
+}
+
+*{
+    text-decoration: none !important;
+}
